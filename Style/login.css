@@ -81,3 +81,20 @@ a {
   #forgot{
     margin-bottom: 5px;
   }
+  #pass-status {
+    float: right;
+    margin-left: 10px;
+    margin-top: -47px;
+    position: relative;
+    z-index: 2;
+    width: 33%;
+  }
+  #scales{
+    width:18px ;
+    height:18px ;
+    margin-top: 14px;
+  }
+  #scales+label{
+    font-size: 20px;
+    font-weight: normal;
+  }

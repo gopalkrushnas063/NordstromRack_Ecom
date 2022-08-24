@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link
       rel="icon"
       href="https://n.nordstrommedia.com/id/12bcd953-0629-48b9-9997-5c5198a3c76d.png"
@@ -45,15 +46,17 @@
           name=""
           id="password"
           placeholder="Enter password"
+          
         />
-        <p id="forgot"><a  href="">Forgot password?</a></p>
-        
-        
-        <label class="keep"
-          >Keep me signed in. <a href="">Details</a>
-          <input type="radio" name="radio" />
-          <span class="check"></span>
-        </label>
+        <i id="pass-status" class="fa fa-eye" style="font-size: 24px" aria-hidden="true" onClick="viewPassword()"></i>
+
+
+        <p id="forgot"><a href="">Forgot password?</a></p>
+
+        <div>
+          <input type="checkbox" id="scales" name="scales" checked />
+          <label for="scales">Keep me signed in. <a href="">Details</a></label>
+        </div>
 
         <button id="signup">Sign In</button>
       </form>
@@ -61,32 +64,4 @@
   </body>
 </html>
 
-<script>
-  let form = document.querySelector("form");
-  let userData = JSON.parse(localStorage.getItem("userData")) || [];
-  form.addEventListener("submit", function (event) {
-    event.preventDefault();
-    let data = {
-      email: form.email.value,
-      password: form.password.value,
-    };
-    if (checkSignin(data.email, data.password) === true) {
-      window.location.href = "index.html";
-      localStorage.setItem("signin", JSON.stringify(data));
-      alert("Sign In Successful");
-    } else {
-      alert("Wrong Username Or Password");
-    }
-  });
-
-  function checkSignin(email, password) {
-    let filter = userData.filter(function (el) {
-      return el.email === email && el.password;
-    });
-    if (filter.length > 0) {
-      return true;
-    } else {
-      return false;
-    }
-  }
-</script>
+<script src="./Script/login.js"></script>
