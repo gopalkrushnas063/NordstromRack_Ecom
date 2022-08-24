@@ -1,0 +1,146 @@
+body{
+    color: gray;
+}
+form > h1 {
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    margin-bottom: 20px;
+    color: black;
+    font-weight: normal;
+  }
+
+  h1 + p {
+    width: 100%;
+    height: 30px;
+  }
+
+  h1 + p + p {
+    width: 100%;
+    height: 30px;
+  }
+
+  h1 + p + p + p {
+    width: 100%;
+    height: 30px;
+  }
+
+  #signup {
+    width: 74%;
+    height: 40px;
+    margin-top: 20px;
+    background-color: #00819d ;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  form > input {
+    width: 70%;
+    display: block;
+    margin: 15px 0px;
+    font-size: 15px;
+    padding: 2%;
+    border: 1px solid gray;
+  }
+
+  label {
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  form {
+    width: 500px;
+    margin: 1% auto;
+    padding: 3%;
+    background: transparent;
+    border-radius: 10px;
+  }
+
+  #termNcondition {
+    width: 75%;
+    height: 40px;
+    text-align: left;
+  }
+
+  #signup + p {
+    width: 100%;
+    height: 40px;
+    margin: auto;
+    text-align: center;
+  }
+  #box {
+    margin-bottom: 50px;
+    margin-top: 30px;
+  }
+  a:visited{
+    color: #00819d;
+  }
+  
+  .keep {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 17px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-weight: normal;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .keep input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .check {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 17px;
+    width: 17px;
+    background-color: #eee;
+    border: 1px solid gray;
+  }
+  .container {
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-weight: normal;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+
+  .container input:checked ~ .checkmark {
+    background-color: #2196f3;
+  }
+  

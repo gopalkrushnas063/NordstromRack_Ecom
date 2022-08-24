@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://n.nordstrommedia.com/id/12bcd953-0629-48b9-9997-5c5198a3c76d.png"
+      sizes="16x16"
+    />
+    <link
+      rel="icon"
+      href="https://n.nordstrommedia.com/id/637eb4b8-30e6-4c41-8dc0-7a004d1e8c37.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="https://n.nordstrommedia.com/id/4041c704-7e86-473c-bf3b-2684152049a8.png"
+      sizes="96x96"
+    />
+
+    <title data-react-helmet="true">
+      Nordstrom Rack Online &amp; In Store: Shop Dresses, Shoes, Handbags,
+      Jewelry &amp; More
+    </title>
+    <link rel="stylesheet" href="./Style/login.css" />
+  </head>
+
+  <body>
+    <div id="box">
+      <form action="">
+        <p id="welcome">Welcome back!</p>
+        <p>Sign in with the same info at:</p>
+        <img src="./Style/logo.JPG" alt="" />
+        <br />
+        <label for="">Email</label>
+        <br />
+        <input type="email" id="email" placeholder="Enter email" />
+        <br />
+        <label for="">Password</label>
+        <br />
+        <input
+          type="password"
+          name=""
+          id="password"
+          placeholder="Enter password"
+        />
+        <p id="forgot"><a  href="">Forgot password?</a></p>
+        
+        
+        <label class="keep"
+          >Keep me signed in. <a href="">Details</a>
+          <input type="radio" name="radio" />
+          <span class="check"></span>
+        </label>
+
+        <button id="signup">Sign In</button>
+      </form>
+    </div>
+  </body>
+</html>
+
+<script>
+  let form = document.querySelector("form");
+  let userData = JSON.parse(localStorage.getItem("userData")) || [];
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    let data = {
+      email: form.email.value,
+      password: form.password.value,
+    };
+    if (checkSignin(data.email, data.password) === true) {
+      window.location.href = "index.html";
+      localStorage.setItem("signin", JSON.stringify(data));
+      alert("Sign In Successful");
+    } else {
+      alert("Wrong Username Or Password");
+    }
+  });
+
+  function checkSignin(email, password) {
+    let filter = userData.filter(function (el) {
+      return el.email === email && el.password;
+    });
+    if (filter.length > 0) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+</script>
