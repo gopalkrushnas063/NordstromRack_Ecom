@@ -14,7 +14,7 @@ function navbar() {
     <div id="signup_div">
         <a href="signup.html">Sign In  <span id="down_arr">&#709;</span></a>
         <div id="bag_img">
-        <a href=""><i class="fa fa-shopping-bag" style="font-size:45px" aria-hidden="true"></i>
+        <a href="/cart.html"><i class="fa fa-shopping-bag" style="font-size:45px" aria-hidden="true"></i>
         </a>
             
         </div>

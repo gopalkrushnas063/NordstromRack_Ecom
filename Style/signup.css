@@ -93,11 +93,12 @@ input {
   color: #000;
   position: relative;
   /* padding: 20px; */
-  /* margin-top: 10px; */
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 #message p {
-  padding-left: 35px;
+  padding-left: 32px;
   font-size: 15px;
 }
 
