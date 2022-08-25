@@ -27,10 +27,10 @@ function navbar() {
 <div id="navbar_bottom">
     <div>
         <a href="">Clearance</a>
-        <a href="">Women</a>
-        <a href="">Men</a>
-        <a href="">Kids</a>
-        <a href="">Shoes</a>
+        <a href="./women.html">Women</a>
+        <a href="./mens.html">Men</a>
+        <a href="./kids.html">Kids</a>
+        <a href="./shoes.html">Shoes</a>
         <a href="./activewear.html">Activewear</a>
         <a href="./bag&acessories.html">Bag&Accessories</a>
         <a href="">Home</a>
