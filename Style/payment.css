@@ -15,6 +15,9 @@ body {
   margin-bottom: 20px;
   padding: 20px;
 }
+#uName {
+  font-size: 26px;
+}
 .container {
   display: block;
   position: relative;
