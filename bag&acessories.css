@@ -1,0 +1,233 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+#container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content:space-around;
+    width: 98%;
+    row-gap:50px;
+    column-gap: 10px;
+    padding-left:10px;
+    padding-right: 10px;
+    margin: auto;
+    font-family: "Brandon Text", Arial,sans-serif;
+    font-size: 16px;
+    line-height: 22.4px;     
+}
+#container>div{
+    margin-top: 20px;
+    width: 100%;  
+    height: auto;  
+    cursor: pointer;     
+    display: block;  
+    line-height: 22.4px;  
+}
+.image{ 
+    width: 100%;
+    height: 70%;        
+}
+h5{   
+    font-size: 16px;
+    font-weight:600;
+    margin: 18px 0px 0px 0px ;
+    color: #393939;
+    
+}
+.type{
+    color: #959595;
+    
+}
+.type:hover{
+    color: #00819D;
+}
+.prc{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+.span1{
+    font-weight: 700;
+}
+.cst{
+    text-decoration: line-through;
+}
+.shp{
+    color: #959595;
+    line-height: 10px;   
+    text-decoration:none solid rgb(115, 115, 115);
+}
+
+@media only screen and (min-width:693px) {
+
+    body{
+        padding: 0px;
+        margin: 0px;
+    }
+
+    #container{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: auto;
+        justify-content:space-around;
+        width: 90%;
+        row-gap:50px;
+        column-gap: 10px;
+        padding-left:10px;
+        padding-right: 10px;
+        margin: auto;
+        font-family: "Brandon Text", Arial,sans-serif;
+        font-size: 12px;
+        line-height: 15px;     
+    }
+    #container>div{
+        margin-top: 20px;
+        width: 100%;  
+        height: auto;  
+        cursor: pointer;     
+        display: block;   
+    }
+    .image{ 
+        width: 100%;
+        height: 50%;        
+    }.type{
+        color: #959595;
+    }
+    .cst{
+        text-decoration: line-through;
+    }
+    .shp{
+        color: #959595;
+        line-height: 12px;   
+        text-decoration:none solid rgb(115, 115, 115);
+    }
+    .prc{
+        display: inline-block;
+        width: 70%;
+        justify-content:flex-start;
+        column-gap:5px;
+    }
+    .shp{
+        color: #959595;
+        line-height: 15px;   
+        text-decoration:none solid rgb(115, 115, 115);
+    }
+
+    
+}
+
+@media all and (max-width:692px) and (min-width:421px){
+
+    body{
+        padding: 0px;
+        margin: 0px;
+    }
+
+    #container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+        justify-content:space-around;
+        width: 98%;
+        row-gap:50px;
+        column-gap: 10px;
+        padding-left:10px;
+        padding-right: 10px;
+        margin: auto;
+        font-family: "Brandon Text", Arial,sans-serif;
+        font-size: 12px;
+        line-height: 15px;     
+    }
+    #container>div{
+        margin-top: 20px;
+        width: 100%;  
+        height: auto;  
+        cursor: pointer;     
+        display: block;   
+    }
+    .image{ 
+        width: 100%;
+        height: 60%;        
+    }.type{
+        color: #959595;
+    }
+    .cst{
+        text-decoration: line-through;
+    }
+    .shp{
+        color: #959595;
+        line-height: 8px;   
+        text-decoration:none solid rgb(115, 115, 115);
+    }
+    .prc{
+        display: inline-block;
+        width: 70%;
+        justify-content:flex-start;
+        column-gap:5px;
+    }
+    .shp{
+        color: #959595;
+        line-height: 10px;   
+        text-decoration:none solid rgb(115, 115, 115);
+    }
+
+}
+
+@media all and (max-width:420px) and (min-width:51px){
+    body{
+        padding: 0px;
+        margin: 0px;
+    }
+
+    #container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+        justify-content:space-around;
+        width: 90%;
+        row-gap:50px;
+        column-gap: 10px;
+        padding-left:10px;
+        padding-right: 10px;
+        margin: auto;
+        font-family: "Brandon Text", Arial,sans-serif;
+        font-size: 12px;
+        line-height: 15px;     
+    }
+    #container>div{
+        margin-top: 20px;
+        width: 100%;  
+        height: auto;  
+        cursor: pointer;     
+        display: block;   
+    }
+    .image{ 
+        width: 100%;
+        height: 50%;        
+    }.type{
+        color: #959595;
+        
+    }
+    .cst{
+        text-decoration: line-through;
+    }
+    .shp{
+        color: #959595;
+        line-height: 8px;   
+        text-decoration:none solid rgb(115, 115, 115);
+    }
+    .prc{
+        display: inline-block;
+        width: 70%;
+        justify-content:flex-start;
+        column-gap:5px;
+    }
+    .shp{
+        color: #959595;
+        line-height: 13px;   
+        text-decoration:none solid rgb(115, 115, 115);
+    }
+
+}
+
