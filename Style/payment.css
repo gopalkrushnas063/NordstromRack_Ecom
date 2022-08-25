@@ -1,0 +1,128 @@
+body {
+  background-color: #f4f4f4;
+}
+#paymentBox {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  width: 40%;
+  height: 900px;
+  margin: auto;
+  margin-top: 40px;
+  background-color: white;
+  border-radius: 10px;
+}
+#headpay {
+  font-size: 30px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.container {
+  display: block;
+  position: relative;
+  padding-left: 45px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+  border: 1px solid gray;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+.fa-credit-card{
+    margin-right: 10px;
+}
+#input_div i {
+  margin-left: 30px;
+  margin-top: -30px;
+}
+.fa-search {
+  position: absolute;
+  padding-left: 25px;
+  padding-top: 12px;
+}
+.icon {
+  padding: 20px;
+  min-width: 50px;
+}
+label {
+  font-size: 25px;
+  margin-left: 20px;
+}
+
+input[type="number"] {
+  width: 50%;
+  height: 50px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+input[type="text"] {
+  width: 50%;
+  height: 50px;
+  margin-left: 20px;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+input[type="checkbox"] {
+  margin-left: 20px;
+  width: 27px;
+  height: 27px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+button {
+  width: 50%;
+  height: 50px;
+  margin-top: 20px;
+  background-color: #00819d;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-left: 20px;
+  font-size: 20px;
+}
