@@ -1,3 +1,7 @@
+import {navbar,append} from "../components/navbar.js"
+
+document.getElementById("navbar").innerHTML=navbar()
+
 let All_images_link = [
   'https://n.nordstrommedia.com/id/7df6cb96-d13e-4b26-8add-8b444d6699c4.jpeg?h=720&w=1608',
   'https://n.nordstrommedia.com/id/1a9b8a06-2ef3-4cd5-a164-5b8ae4f63f9f.jpeg?h=720&w=1608',

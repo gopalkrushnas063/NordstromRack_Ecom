@@ -4,7 +4,7 @@ function navbar() {
 <div id="navbar_upper">
 
     <div id="logo">
-        <a href=""><img
+        <a href="./index.html"><img
                 src="https://duoshouus.com/wp-content/uploads/2021/01/duoshou-2021-01-15_09-10-00_752.jpg"
                 alt=""></a>
     </div>
@@ -12,7 +12,7 @@ function navbar() {
     <i class="fa fa-search" style="font-size:24px"></i><input id="search" type="text" placeholder="Search for products or brands">
     </div>
     <div id="signup_div">
-        <a href="signup.html">Sign In  <span id="down_arr">&#709;</span></a>
+        <a href="signup.html">Sign In  <span id="down_arr"></span></a>
         <div id="bag_img">
         <a href="/cart.html"><i class="fa fa-shopping-bag" style="font-size:45px" aria-hidden="true"></i>
         </a>
