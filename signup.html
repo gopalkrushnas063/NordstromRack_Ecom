@@ -107,8 +107,9 @@
 
 <script src="./Script/signup.js"></script>
 <script type="module">
-  import navbar from "../components/navbar.js";
-  let navbar_container = document.getElementById("navbar");
-  navbar_container.innerHTML = navbar();
+  
+import {navbar,append} from "../components/navbar.js"
+
+document.getElementById("navbar").innerHTML=navbar()
 </script>
 
