@@ -1,10 +1,15 @@
 #welcome {
-  font-size: 25px;
+  font-size: 30px;
   color: gray;
+  margin-bottom: 10px;
 }
-
+p+img{
+  width: 60%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 #signup {
-  width: 74%;
+  width: 70%;
   height: 40px;
   margin-top: 20px;
   background-color: #00819d;
@@ -87,7 +92,7 @@ a {
     margin-top: -47px;
     position: relative;
     z-index: 2;
-    width: 33%;
+    width: 38%;
   }
   #scales{
     width:18px ;

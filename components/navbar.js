@@ -1,6 +1,5 @@
 function navbar() {
-    
-    return `<p id="ptag">Free shipping over $89, or shop online and pick up select orders at a Nordstrom Rack or Nordstrom
+  return `<p id="ptag">Free shipping over $89, or shop online and pick up select orders at a Nordstrom Rack or Nordstrom
     store. <a href="">Learn More</a></p>
 <div id="navbar_upper">
 
@@ -10,14 +9,14 @@ function navbar() {
                 alt=""></a>
     </div>
     <div id="input_div">
-        <img src="http://www.clker.com/cliparts/g/Y/P/o/h/U/search-logo.svg" alt="">
-        <input id="search" type="text" placeholder="Search for products or brands">
+    <i class="fa fa-search" style="font-size:24px"></i><input id="search" type="text" placeholder="Search for products or brands">
     </div>
     <div id="signup_div">
         <a href="signup.html">Sign In  <span id="down_arr">&#709;</span></a>
         <div id="bag_img">
-            <a href=""><img src="https://cdn2.iconfinder.com/data/icons/shopping-316/100/Shopping_7-512.png"
-                    alt=""></a>
+        <a href=""><i class="fa fa-shopping-bag" style="font-size:45px" aria-hidden="true"></i>
+        </a>
+            
         </div>
     </div>
 
@@ -40,8 +39,7 @@ function navbar() {
         <a href="">Flash Events</a>
     </div>
 
-</div>`
-
+</div>`;
 }
 
-export default navbar
+export default navbar;

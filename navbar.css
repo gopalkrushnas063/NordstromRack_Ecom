@@ -5,10 +5,10 @@
 }
 
 #navbar_upper {
-    width: 80%;
+    width: 98%;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -17,13 +17,14 @@
 
 
 #ptag {
-    height: 30px;
-    font-size: 15px;
+    height: 40px;
+    font-size: 17px;
     background-color: #00819d;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #ptag a {
@@ -32,32 +33,47 @@
 }
 
 #logo {
-    margin-right: 10px;
+width: 9%;
+height: 100px;
 }
 
 #logo img {
-    width: 40px;
-    height: 40px;
+    width: 100%;
+    height: 100%;
 }
 
 #input_div {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 70%;
+    width: 50%;
+    
 }
 
 #input_div input {
     width: 100%;
-    padding: 4px;
+    height: 40px;
+    padding: 25px;
     border: none;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-    color: #616161;
+    color: gray;
+    font-size: 20px;
+    padding-left: 40px;
 }
 
 #input_div img {
-    width: 40px;
+    width: 5%;
     height: 40px;
+    border: 1px solid gray;
+
+}
+#input_div i{
+    position: absolute;
+    padding-left: 10px;
+}
+.icon {
+    padding: 10px;
+    min-width: 40px;
 }
 
 #signup_div {
@@ -65,6 +81,9 @@
     justify-content: space-between;
     align-items: center;
     color: #616161;
+    width: 15%;
+    height: 100px;
+    font-size: 30px;
 }
 
 #signup_div>a {
@@ -75,29 +94,36 @@
     font-weight: bold;
 }
 
-#bag_img img {
-    margin-left: 20px;
-    width: 20px;
-    height: 20px;
+#bag_img {
+    width: 50%;
+    height: 50px;
+    text-align: center;
 }
 
 #navbar_bottom {
-    width: 75vw;
+    width: 95vw;
     margin: auto;
     padding: 10px;
+    
 }
 
-#navbar_bottom {
+#navbar_bottom div {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    font-size: 25px;
 }
-
-#navbar_bottom a {
-    margin-right: 10px;
-    display: inline-block;
+#navbar_bottom a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+#navbar_bottom a:hover {
+   
     margin-bottom: 10px;
     color: #616161;
     border-bottom: 0ch;
+    background-color: transparent;
+    text-decoration: underline;
 }
 
 #navbar_bottom a:nth-child(1) {
