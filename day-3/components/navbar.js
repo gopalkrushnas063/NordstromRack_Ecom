@@ -31,8 +31,8 @@ function navbar() {
         <a href="">Men</a>
         <a href="">Kids</a>
         <a href="">Shoes</a>
-        <a href="">Activewear</a>
-        <a href="">Bag&Accessories</a>
+        <a href="./activewear.html">Activewear</a>
+        <a href="./bag&acessories.html">Bag&Accessories</a>
         <a href="">Home</a>
         <a href="">Beauty</a>
         <a href="">Gifts</a>
