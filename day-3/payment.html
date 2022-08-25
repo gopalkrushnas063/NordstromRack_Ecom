@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="icon"
+      href="https://n.nordstrommedia.com/id/12bcd953-0629-48b9-9997-5c5198a3c76d.png"
+      sizes="16x16"
+    />
+    <link
+      rel="icon"
+      href="https://n.nordstrommedia.com/id/637eb4b8-30e6-4c41-8dc0-7a004d1e8c37.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="https://n.nordstrommedia.com/id/4041c704-7e86-473c-bf3b-2684152049a8.png"
+      sizes="96x96"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment | Nordstrom Rack</title>
+    <link rel="stylesheet" href="./Style/payment.css" />
+  </head>
+  <body>
+    <div id="navbar"></div>
+
+    <div id="paymentBox">
+        <p id="headpay">Payment</p>
+      <label class="container"
+        ><i class="fa fa-credit-card" style="font-size: 36px"></i>Credit Card
+        <input type="radio" name="radio" />
+        <span class="checkmark"></span>
+      </label>
+      <label for="">Card number*</label>
+      <br>
+      <input type="number" name="" id="cardnumber">
+      <br>
+      <label for="">Expiration date*</label>
+      <br>
+      <input type="number" name="" id="expiration">
+      <br>
+      <label for="">Security Code*</label>
+      <br>
+      <input type="number" name="" id="SecurityCode">
+      <br>
+      <label for="">Billing address</label>
+      <br>
+      <input type="checkbox" name="" id="">
+      <label for="">Same as shipping address</label>
+      <br>
+      <label for="">First name*</label>
+      <br>
+      <input type="text" name="" id="">
+      <br>
+      <label for="">Last name*</label>
+      <br>
+      <input type="text" name="" id="">
+      <br>
+      <label for="">Address*</label>
+      <br>
+      <i class="fa fa-search" style="font-size:24px"></i><input type="text" name="" id="" placeholder="Enter your address details">
+      <br>
+      <button>Proceed To Payment</button>
+    </div>
+  </body>
+</html>
+<script src="./Script/payment.js"></script>
+<script type="module">
+  import navbar from "../components/navbar.js";
+  let navbar_container = document.getElementById("navbar");
+  navbar_container.innerHTML = navbar();
+</script>

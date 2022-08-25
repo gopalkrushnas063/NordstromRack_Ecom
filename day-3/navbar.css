@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#navbar_upper {
+    width: 98%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #616161;
+}
+
+
+#ptag {
+    height: 40px;
+    font-size: 17px;
+    background-color: #00819d;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#ptag a {
+    color: white;
+    margin-left: 10px;
+}
+
+#logo {
+width: 9%;
+height: 100px;
+}
+
+#logo img {
+    width: 100%;
+    height: 100%;
+}
+
+#input_div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    
+}
+
+#input_div input {
+    width: 100%;
+    height: 40px;
+    padding: 25px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    color: gray;
+    font-size: 20px;
+    padding-left: 40px;
+}
+
+#input_div img {
+    width: 5%;
+    height: 40px;
+    border: 1px solid gray;
+
+}
+#input_div i{
+    position: absolute;
+    padding-left: 10px;
+}
+.icon {
+    padding: 10px;
+    min-width: 40px;
+}
+
+#signup_div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #616161;
+    width: 15%;
+    height: 100px;
+    font-size: 30px;
+}
+
+#signup_div>a {
+    text-decoration: none;
+}
+
+#down_arr {
+    font-weight: bold;
+}
+
+#bag_img {
+    width: 50%;
+    height: 50px;
+    text-align: center;
+}
+
+#navbar_bottom {
+    width: 95vw;
+    margin: auto;
+    padding: 10px;
+    
+}
+
+#navbar_bottom div {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 25px;
+}
+#navbar_bottom a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+#navbar_bottom a:hover {
+   
+    margin-bottom: 10px;
+    color: #616161;
+    border-bottom: 0ch;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+#navbar_bottom a:nth-child(1) {
+    color: red;
+}
+
+#navbar_bottom a:nth-child(11) {
+    color: #00819d;
+}
+
+@media all and (min-width:0) and (max-width: 480px) {
+    #ptag {
+        padding: 10px;
+        font-size: 12px;
+    }
+    #navbar_upper {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    #navbar_bottom {
+        width: 85vw;
+    }
+
+}
+
+@media all and (min-width:481px) and (max-width: 720px) {
+    #navbar_bottom {
+        width: 85vw;
+    }
+}
