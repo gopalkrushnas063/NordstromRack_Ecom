@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#navbar_upper {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #616161;
+}
+
+
+#ptag {
+    height: 30px;
+    font-size: 15px;
+    background-color: #00819d;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#ptag a {
+    color: white;
+    margin-left: 10px;
+}
+
+#logo {
+    margin-right: 10px;
+}
+
+#logo img {
+    width: 40px;
+    height: 40px;
+}
+
+#input_div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 70%;
+}
+
+#input_div input {
+    width: 100%;
+    padding: 4px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    color: #616161;
+}
+
+#input_div img {
+    width: 40px;
+    height: 40px;
+}
+
+#signup_div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #616161;
+}
+
+#signup_div>a {
+    text-decoration: none;
+}
+
+#down_arr {
+    font-weight: bold;
+}
+
+#bag_img img {
+    margin-left: 20px;
+    width: 20px;
+    height: 20px;
+}
+
+#navbar_bottom {
+    width: 75vw;
+    margin: auto;
+    padding: 10px;
+}
+
+#navbar_bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+#navbar_bottom a {
+    margin-right: 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #616161;
+    border-bottom: 0ch;
+}
+
+#navbar_bottom a:nth-child(1) {
+    color: red;
+}
+
+#navbar_bottom a:nth-child(11) {
+    color: #00819d;
+}
+
+@media all and (min-width:0) and (max-width: 480px) {
+    #ptag {
+        padding: 10px;
+        font-size: 12px;
+    }
+    #navbar_upper {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    #navbar_bottom {
+        width: 85vw;
+    }
+
+}
+
+@media all and (min-width:481px) and (max-width: 720px) {
+    #navbar_bottom {
+        width: 85vw;
+    }
+}
