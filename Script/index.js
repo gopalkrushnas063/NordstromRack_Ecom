@@ -238,3 +238,19 @@ left_button4.addEventListener('click', function () {
   }
   imageList4.src = All_images_link2[image_position4];
 });
+
+
+
+
+
+// ....................User Name Show in Home Page............................
+let userData = JSON.parse(localStorage.getItem("userData")) 
+// console.log(userName)
+let display = (userData) =>{
+  userData.forEach(el => {
+    console.log(el.name)
+    document.getElementById("userName").innerText = `Welcome back, ${el.name}!`;
+    document.getElementById('uName').innerText = `Hi, ${el.name}`
+  });
+}
+display(userData)
