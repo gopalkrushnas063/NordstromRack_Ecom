@@ -1,5 +1,5 @@
 function navbar() {
-  return `<div id="title">
+    return `<div id="title">
       <div>
           <h4>Free shipping over $89, or shop online and pick up select orders at a Nordstrom Rack or Nordstrom store.  <a href="#">Learn More</a>
       </div>
@@ -149,58 +149,86 @@ function navbar() {
   </div>`;
 }
 
-let append = (data, card) => {
-  data.forEach((el) => {
-    let image = document.createElement("img");
-    image.setAttribute("class", "image");
-    image.src = el.img;
 
-    let brand = document.createElement("h5");
-    brand.innerText = el.brandName;
+let append = (data, card, renderItem) => {
+    data.forEach((el) => {
+       let image = document.createElement("img");
+        image.setAttribute("class", "image");
+        image.src = el.img;
 
-    let sub = document.createElement("p");
-    sub.setAttribute("class", "type");
-    sub.innerText = el.type;
+        // let p = document.createElement('p')
 
-    let div1 = document.createElement("div");
-    div1.setAttribute("class", "prc");
-    div1.style.display = "flex";
 
-    let span1 = document.createElement("span");
-    span1.setAttribute("class", "span1");
-    span1.innerText = el.price;
+        let brand = document.createElement("h5");
+        brand.innerText = el.brandName;
 
-    let span2 = document.createElement("span");
-    span2.setAttribute("class", "span2");
-    span2.innerText = el.off;
+        let sub = document.createElement("p");
+        sub.setAttribute("class", "type");
+        sub.innerText = el.type;
 
-    div1.append(span1, span2);
+        let div1 = document.createElement("div");
+        div1.setAttribute("class", "prc");
+        div1.style.display = "flex";
 
-    let cst = document.createElement("p");
-    cst.setAttribute("class", "cst");
-    cst.innerText = el.cost;
+        let span1 = document.createElement("span");
+        span1.setAttribute("class", "span1");
+        span1.innerText = el.price;
 
-    let shp = document.createElement("p");
-    shp.setAttribute("class", "shp");
-    shp.innerText = el.ship;
+        let span2 = document.createElement("span");
+        span2.setAttribute("class", "span2");
+        span2.innerText = el.off;
 
-    let div = document.createElement("div");
+        div1.append(span1, span2);
 
-    div.onclick = () => {
-      add(el);
-    };
-    div.append(image, brand, sub, div1, cst, shp);
-    card.append(div);
-  });
+        let cst = document.createElement("p");
+        cst.setAttribute("class", "cst");
+        cst.innerText = el.cost;
+
+        let shp = document.createElement("p");
+        shp.setAttribute("class", "shp");
+        shp.innerText = el.ship;
+
+        let div = document.createElement("div");
+
+        div.onclick = () => {
+            // renderItem()
+
+            if(renderItem) renderItem()
+            add(el);
+        };
+
+        div.append(image, brand, sub, div1, cst, shp);
+
+       
+        let quantity=document.createElement("div")
+        quantity.setAttribute("id","quant")
+        let p = document.createElement('p')
+
+        p.innerHTML = el.count || 0;
+        quantity.append(p)
+        card.append(div,quantity);
+        
+    });
 };
 
-// let add=(el)=>{
+let add = (el) => {
+    let addtocart = JSON.parse(localStorage.getItem("add")) || [];
+    //console.log(el, addtocart[0]);
+    let index = addtocart.findIndex(ele => ele.brandName === el.brandName)
+    if (index !== -1) {
+        addtocart[index].count = addtocart[index].count + 1
+    } else {
+        el.count = 1
+        addtocart.push(el)
+    }
 
-//    let addtocart=JSON.parse(localStorage.getItem("add"))||[];
-//     addtocart.push(el);
-//     localStorage.setItem("add",JSON.stringify(addtocart))
-//     console.log(el)
 
-// }
+    console.log(addtocart)
 
-export { navbar, append };
+    localStorage.setItem("add", JSON.stringify(addtocart))
+    alert("Product Added to Your Cart Successfully")
+    window.location.href = "cart.html"
+
+}
+
+export { navbar, append, add };

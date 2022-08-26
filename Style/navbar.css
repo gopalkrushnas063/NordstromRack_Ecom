@@ -99,6 +99,7 @@
   justify-content: space-around;
   align-items: center;
   cursor: pointer;
+  
 }
 
 #navbar > div:last-child > div:first-child {

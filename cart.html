@@ -1,57 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./Style/navbar.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-    />
-    <link
-      rel="icon"
-      href="https://n.nordstrommedia.com/id/12bcd953-0629-48b9-9997-5c5198a3c76d.png"
-      sizes="16x16"
-    />
-    <link
-      rel="icon"
-      href="https://n.nordstrommedia.com/id/637eb4b8-30e6-4c41-8dc0-7a004d1e8c37.png"
-      sizes="32x32"
-    />
-    <link
-      rel="icon"
-      href="https://n.nordstrommedia.com/id/4041c704-7e86-473c-bf3b-2684152049a8.png"
-      sizes="96x96"
-    />
-    <title data-react-helmet="true">Shopping Bag | Nordstrom Rack</title>
-    <link rel="stylesheet" href="./Style/cart.css" />
-    <link rel="stylesheet" href="./Style/navbar.css" />
-  </head>
 
-  <body>
-    <div id="navbarbody"></div>
-    <div id="shopping">
-      <div id="btn_container">
-        <a href="">Shopping Bag</a>
-        <a href=""> Saved For Later</a>
-      </div>
-      <div id="bag">
-        <h5>Shopping Bag</h5>
-        <p>Items in your bag are not on hold</p>
-      </div>
-      <div id="gift">
-        <img
-          src="https://cdn.shopify.com/s/files/1/0164/3046/products/2f236b9a8f85a6c3ba862d75ad6fcedb_720x.jpg?v=1597895848"
-          alt=""
-        />
-        <p>add a gift message when you check out</p>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./Style/navbar.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+  <link rel="icon" href="https://n.nordstrommedia.com/id/12bcd953-0629-48b9-9997-5c5198a3c76d.png" sizes="16x16" />
+  <link rel="icon" href="https://n.nordstrommedia.com/id/637eb4b8-30e6-4c41-8dc0-7a004d1e8c37.png" sizes="32x32" />
+  <link rel="icon" href="https://n.nordstrommedia.com/id/4041c704-7e86-473c-bf3b-2684152049a8.png" sizes="96x96" />
+  <title data-react-helmet="true">Shopping Bag | Nordstrom Rack</title>
+  <link rel="stylesheet" href="./Style/cart.css" />
+  <link rel="stylesheet" href="./Style/navbar.css" />
+  <link rel="stylesheet" href="./Style/pages.css" />
+</head>
+
+<body>
+  <div id="navbarbody"></div>
+  <div id="shopping">
+    <div id="btn_container">
+      <button id="btn1">Shopping Bag</button>
+      <button id="btn2"> Saved for Later</button>
     </div>
-  </body>
+    <div id="bag">
+      <h5>Shopping Bag</h5>
+      <p>Items in your bag are not on hold</p>
+    </div>
+    <div id="gift">
+      <img
+        src="https://cdn.shopify.com/s/files/1/0164/3046/products/2f236b9a8f85a6c3ba862d75ad6fcedb_720x.jpg?v=1597895848"
+        alt="" />
+      <p>add a gift message when you check out</p>
+    </div>
+  </div>
+  <div id="cart">
+    
+    
+
+    <div id="bag_append">
+          
+    </div>
+    <div id="price" class="total-price"  ></div>
+    </div>
+    <div id="bottom">
+      <div id="left">
+        <p>Accepted Payment Methods</p>
+        <div id="img-container">
+        <div class="img"><img src="https://amoprx.com/wp-content/uploads/2020/09/MainVisaBlue.png" alt=""></div>
+        <div class="img"><img src="https://amoprx.com/wp-content/uploads/2020/09/mc_vrt_opt_pos_73_3x.png" alt=""></div>
+         <div class="img"><img src="https://financialit.net/sites/default/files/afterpay.jpg" alt=""></div>
+         <div class="img"><img src="https://i.pcmag.com/imagery/reviews/068BjcjwBw0snwHIq0KNo5m-15.fit_scale.size_1028x578.v1602794215.png" alt=""></div>
+         <div class="img"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/American_Express_logo_%282018%29.svg/1200px-American_Express_logo_%282018%29.svg.png"
+           alt=""></div>
+           <div class="img"><img src="https://securecdn.pymnts.com/wp-content/uploads/2014/03/Discover-logo-e1416429693676.jpg" alt=""></div>
+      </div>
+      <h6>Need help? Call 1.888.966.6283 or chat with us</h6>
+      <p>Pricing and Promotion details.see more</p>
+    </div>
+    <div id="right">
+      <div class="subtotal">
+        <p >subtotal</p>
+        <p class="total-price"></p>
+      </div>
+      <div class="subtotal">
+        <p >Shipping </p>
+        <p >$9.95</p>
+      </div>
+       <div class="subtotal">
+        <p >Estimated Tax</p>
+        <p >$5.42</p>
+      </div>
+      <div class="subtotal">
+        <p >Estimated Total</p>
+        <p class="total-price"></p>
+      </div>
+      <button id="checkout">Checkout</button>
+
+    </div>
+    
+</div>
+
+</body>
+
 </html>
 <script src="./Script/cart.js" type="module"></script>
