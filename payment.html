@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="./Style/payment.css" />
   </head>
   <body>
-    <div id="navbar"></div>
+    <div id="navbarbody"></div>
 
     <div id="paymentBox">
         <p id="headpay">Payment</p>
@@ -77,9 +77,9 @@
 <script src="./Script/payment.js"></script>
 <script type="module">
   
-import {navbar,append} from "../components/navbar.js"
+  import {navbar,append} from "../components/navbar.js"
 
-document.getElementById("navbar").innerHTML=navbar()
+document.getElementById("navbarbody").innerHTML=navbar()
 
 let userData = JSON.parse(localStorage.getItem("userData")) 
 console.log(userData)

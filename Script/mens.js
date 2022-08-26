@@ -1,6 +1,6 @@
-import { navbar} from "../components/navbar.js";
+import {navbar,append} from "../components/navbar.js"
 
-document.getElementById("navbar").innerHTML = navbar();
+document.getElementById("navbarbody").innerHTML=navbar()
 
 
 document.querySelector("body").style.backgroundColor = "whitesmoke"

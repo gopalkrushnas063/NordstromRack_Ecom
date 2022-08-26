@@ -8,14 +8,15 @@
   justify-content: flex-end;
   align-items: center;
 }
-#userName{
+#userName {
   margin-top: 20px;
   margin-bottom: 40px;
   margin-left: 40px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
-#uName{
-  font-size: 26px;
+#uName {
+  font-size: 21px;
+  padding: 5px;
 }
 #first_child_of_NM {
   /* border: 2px solid black; */
