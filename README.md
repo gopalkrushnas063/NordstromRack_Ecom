@@ -39,5 +39,7 @@ TeachStack used
 </td>
 
   
+  <hr>
+  
   Navbar Part :
   ![image](https://user-images.githubusercontent.com/103574856/186971634-511f9813-fdd9-439f-bfdf-c65d8f087739.png)
