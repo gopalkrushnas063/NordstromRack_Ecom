@@ -7,19 +7,17 @@ Nordstrom, Inc. is an American luxury department store chain headquartered in Se
 
 
 Features
-
-
-- SignUp and SignIn validation.;
-- local storage data ; 
-- Sorting based on price and Color;
-- Carousel;
+<hr>
+- Signup and Signin validation.
+- Local storage. 
+- Sorting based on price.
 - Add to cart;
-- User Name At as user;
+- User Name show after successfull login.
 - Payment , OTP , Order Confirmation Dynamic ;
   
   
 TeachStack used
-
+<hr>
 - Javascript
 - Html
 - CSS
