@@ -24,7 +24,7 @@ TeachStack used
 - Html
 - CSS
 
-<table align="center">
+<table align="left">
 <tbody>
 <tr valign="top">
 <td width="25%" align="center">
