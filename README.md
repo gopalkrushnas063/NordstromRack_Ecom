@@ -43,3 +43,10 @@ TeachStack used
   
   Navbar Part :
   ![image](https://user-images.githubusercontent.com/103574856/186971634-511f9813-fdd9-439f-bfdf-c65d8f087739.png)
+  
+  
+  <br>
+  
+  Create Account :
+  ![image](https://user-images.githubusercontent.com/103574856/186972005-d65705d8-a4ce-482b-89b9-4b4abee9c445.png)
+
