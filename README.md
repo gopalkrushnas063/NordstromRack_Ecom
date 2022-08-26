@@ -7,7 +7,7 @@ Nordstrom, Inc. is an American luxury department store chain headquartered in Se
 
 
 Features
-<hr>
+
 - Signup and Signin validation.
 - Local storage. 
 - Sorting based on price.
@@ -17,7 +17,7 @@ Features
   
   
 TeachStack used
-<hr>
+
 - Javascript
 - Html
 - CSS
