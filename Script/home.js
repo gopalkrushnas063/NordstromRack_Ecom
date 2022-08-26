@@ -1,5 +1,8 @@
 
-import {append} from "./pagesfetch.js"
+
+import {navbar,append} from "../components/navbar.js"
+
+document.getElementById("navbarbody").innerHTML=navbar()
 
 
 let homeData=[

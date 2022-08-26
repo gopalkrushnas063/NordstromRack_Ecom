@@ -134,7 +134,9 @@ function navbar() {
       </a>
       </div>
       <div>
-          <p>Home</p>
+      <a href="home.html">
+        <p>Home</p>
+      </a>
       </div>
       <div>
           <p>Beauty</p>
