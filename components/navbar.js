@@ -22,8 +22,7 @@ function navbar() {
               <div>
                   <p id="uName">Sign In</p>
               </div>
-              <img src="https://icons-for-free.com/download-icon-arrows+bottom+chevron+direction+down+icon-1320085938044424744_512.png"
-                  alt="icon">
+             
               <div class="content">
                   <div>
                       <a href="signup.html">
@@ -116,7 +115,7 @@ function navbar() {
       </div>
       <div>
       <a href="kids.html">
-        <p>kids</p>
+        <p>Kids</p>
       </a>
       </div>
       <div>
