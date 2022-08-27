@@ -109,6 +109,7 @@ span {
 #below_first_slide_bardivs_2stdiv {
   display: grid;
   display: flex;
+  margin-top: 5%;
   gap: 15px;
 }
 
@@ -202,10 +203,14 @@ span {
 }
 .span1 {
   font-size: 80%;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 .strike1 {
   font-size: 90%;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 .first_grid_box-divs-div {
   line-height: 2px;
@@ -447,6 +452,7 @@ span {
 
 .cloth_name {
   font-size: 71%;
+  margin-bottom: 20px;
 }
 .first_grid_box img {
   width: 100%;
@@ -690,7 +696,7 @@ span {
   }
   #below_first_slide_bar {
     /* border: 2px solid; */
-    margin-top: 10px;
+    /* margin-top: 10%; */
     margin: auto;
     width: 95%;
     height: auto;
@@ -904,6 +910,8 @@ span {
     color: #393939;
     font-size: 15px;
     font-family: sans-serif;
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
 
   #below_first_slide_bardivs-1stdiv p {
@@ -924,6 +932,7 @@ span {
     color: #00819d;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 8px;
+   
   }
 
   /* #first_grid_box {
