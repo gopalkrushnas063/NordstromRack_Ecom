@@ -50,6 +50,7 @@ let cart = (addtocart) => {
 
 let chekout=document.getElementById("checkout")
 chekout.addEventListener("click",()=>{
+  alert('Proceed to payment')
   window.location.href="payment.html"
 })
 cart(addtocart)

@@ -122,9 +122,10 @@
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  width: 70%;
+  width: 100%;
   margin: auto;
   font-size: 22px;
+  gap: 40px;
 }
 #checkout {
   width: 400px;
@@ -135,6 +136,8 @@
   font-size: 25px;
   background-color: #00819d;
   color: white;
+  border: transparent;
+  cursor: pointer;
 }
 .subtotal p {
   font-weight: bold;

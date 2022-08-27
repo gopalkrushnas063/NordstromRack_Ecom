@@ -16,7 +16,7 @@ body {
   padding: 20px;
 }
 #uName {
-  font-size: 21px;
+  font-size: 13px;
   padding: 5px;
 }
 .container {
@@ -121,7 +121,7 @@ input[type="text"] {
   height: 50px;
   margin-left: 20px;
   text-align: center;
-  font-size: 20px;
+  font-size: 15px;
   margin-bottom: 20px;
 }
 input[type="checkbox"] {

@@ -1,7 +1,7 @@
 function navbar() {
     return `<div id="title">
       <div>
-          <h4>Free shipping over $89, or shop online and pick up select orders at a Nordstrom Rack or Nordstrom store.  <a href="#">Learn More</a>
+          <p>Take 40% off sandals! In stores & online thru Sept. 5. Selected styles only. Exclusions apply.<a href="#"><span style="text-decoration: underline">Shop now.</span></a></p>
       </div>
       <div>
           <h3></h3>
@@ -19,11 +19,12 @@ function navbar() {
       </div>
       <div>
           <div>
-              <div>
+              <div id="signpl">
                   <p id="uName">Sign In</p>
-              </div>
-              <img src="https://icons-for-free.com/download-icon-arrows+bottom+chevron+direction+down+icon-1320085938044424744_512.png"
+                  <img src="https://icons-for-free.com/download-icon-arrows+bottom+chevron+direction+down+icon-1320085938044424744_512.png"
                   alt="icon">
+              </div>
+              
               <div class="content">
                   <div>
                       <a href="signup.html">
