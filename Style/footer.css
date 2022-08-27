@@ -1,0 +1,256 @@
+.Get_Exclusive_offers {
+    border: 1px solid transparent;
+    height: auto;
+    width: 95%;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+  }
+  .Get_Exclusive_offers > img {
+    width: 100%;
+  }
+  
+  .Get_Exclusive_offers > div {
+    position: absolute;
+    top: 60%;
+    font-size: 15px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .iam_whole_email_box_div {
+    border: 1px solid transparent;
+    width: 95%;
+    height: 92px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .iam_child_divOf_email_div {
+    border: 2px solid transparent;
+    width: 50%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 20% 38% 38%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .iam_child_divOf_email_div > div {
+    border: 1px solid transparent;
+    height: 50%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .iam_child_divOf_email_div > div:nth-child(1) {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .iam_child_divOf_email_div > div:nth-child(1) > span {
+    font-size: 12px;
+    color: #393939;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  .iam_child_divOf_email_div > div:nth-child(2) > input {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+  }
+  .iam_child_divOf_email_div > div:nth-child(3) > button {
+    height: 100%;
+    width: 100%;
+    background-color: #00819d;
+    color: white;
+    cursor: pointer;
+    border-color: transparent;
+  }
+  
+  .iam_child_divOf_email_div > div:nth-child(3) > button:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .iam_whole_footer_main_div {
+    border: 2px solid green transparent;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(7, 12%);
+    background-color: rgb(248, 248, 248);
+    justify-content: space-between;
+  }
+  
+  .iam_whole_footer_main_div > div {
+    border: 1px solid transparent;
+    height: 100%;
+  }
+  
+  .iam_whole_footer_main_div h3 {
+    /* font-size: 16px; */
+    color: #393939;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .iam_whole_footer_main_div a {
+    display: block;
+    margin-top: 8%;
+  
+    color: #393939;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+  }
+  
+  .footers_last_div {
+    border: 1px solid transparent;
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    background-color: rgb(248, 248, 248);
+  
+  }
+  
+  .footers_last_div > div {
+    border: 1px solid transparent;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .footers_last_div a {
+    /* font-size: ; */
+    color: #393939;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+  }
+  
+  .soccial_media_logo_div {
+    display: flex;
+    gap: 3%;
+  }
+  .laptop_logo_div {
+    display: flex;
+    gap: 3%;
+  }
+  
+  @media all and (min-width: 481px) and (max-width: 720px) {
+    .Get_Exclusive_offers > div {
+      position: absolute;
+      top: 60%;
+      font-size: 7px;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .iam_child_divOf_email_div > div:nth-child(1) > span {
+      font-size: 9px;
+      color: #393939;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+    }
+    .iam_whole_footer_main_div {
+      border: 2px solid transparent;
+      width: 100%;
+      height: auto;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(7, 12%);
+      background-color: rgb(248, 248, 248);
+      justify-content: space-between;
+    }
+    .iam_whole_footer_main_div > div {
+      border: 1px solid transparent;
+      height: 100%;
+    }
+    .iam_whole_footer_main_div h3 {
+      color: #393939;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 10px;
+    }
+    .iam_whole_footer_main_div a {
+      display: block;
+      margin-top: 8%;
+      font-size: 8px;
+      color: #393939;
+      font-family: Arial, Helvetica, sans-serif;
+      text-decoration: none;
+    }
+    .footers_last_div a {
+      font-size: 8px;
+      color: #393939;
+      font-family: Arial, Helvetica, sans-serif;
+      text-decoration: none;
+    }
+  }
+  
+  @media all and (min-width: 320px) and (max-width: 480px) {
+    .Get_Exclusive_offers > div {
+      position: absolute;
+      top: 60%;
+      font-size: 5px;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .iam_child_divOf_email_div > div:nth-child(1) > span {
+      font-size: 7px;
+      color: #393939;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+    }
+    .iam_child_divOf_email_div > div:nth-child(2) > input {
+      height: 70%;
+      width: 90%;
+      background-color: white;
+    }
+    .iam_child_divOf_email_div > div:nth-child(3) > button {
+      height: 60%;
+      width: 90%;
+      background-color: #00819d;
+      color: white;
+      cursor: pointer;
+      border-color: transparent;
+      font-size: 10px;
+    }
+    .iam_whole_footer_main_div {
+      border: 2px solid transparent;
+      width: 100%;
+      height: auto;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(7, 12%);
+      background-color: rgb(248, 248, 248);
+      justify-content: space-between;
+    }
+    .iam_whole_footer_main_div > div {
+      border: 1px solid transparent;
+      height: 100%;
+    }
+    .iam_whole_footer_main_div h3 {
+      font-size: 7px;
+      color: #393939;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .iam_whole_footer_main_div a {
+      display: block;
+      margin-top: 8%;
+      font-size: 6px;
+      color: #393939;
+      font-family: Arial, Helvetica, sans-serif;
+      text-decoration: none;
+    }
+    .footers_last_div a {
+      font-size: 6px;
+      color: #393939;
+      font-family: Arial, Helvetica, sans-serif;
+      text-decoration: none;
+    }
+  }
+  

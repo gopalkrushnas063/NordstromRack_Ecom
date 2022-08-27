@@ -238,4 +238,115 @@ let add = (el) => {
 
 }
 
-export { navbar, append, add };
+function footer(){
+    return `<div class="Get_Exclusive_offers">
+    <img
+      src="https://n.nordstrommedia.com/id/e63e8dd7-3537-47db-912c-7d370e63658f.jpeg?h=180&w=1600"
+      alt=""
+    />
+    <div>
+      Sign up and be first to know about flash events, new markdowns, private
+      sales and <a href=""> Sign Up.</a>
+    </div>
+  </div>
+
+  <div class="iam_whole_email_box_div">
+    <div class="iam_child_divOf_email_div">
+      <div><span>Get Email Updates:</span></div>
+      <div><input type="text" placeholder="Email Adress" /></div>
+      <div><button>Sign Up</button></div>
+    </div>
+  </div>
+
+  <div class="iam_whole_footer_main_div">
+    <div>
+      <h3>Customer Service</h3>
+      <a href="">Order Status</a>
+      <a href="">Guest</a>
+      <a href="">Returns</a>
+      <a href="">Shipping & Return</a>
+      <a href="">Policy</a>
+      <a href="">Gift Cards</a>
+      <a href="">FAQ</a>
+      <a href="">Contact Us</a>
+    </div>
+    <div>
+      <h3>About Us</h3>
+      <a href="">About Our Brand</a>
+      <a href="">The Nordy Club</a>
+      <a href="">Store Locator</a>
+      <a href="">All Brands</a>
+      <a href="">Careers</a>
+      <a href="">Get Email Updatess</a>
+      <a href="">Nordstrom Blog</a>
+      <a href="">Nordy Podcast</a>
+    </div>
+    <div>
+      <h3>Nordstrom Rack & The Community</h3>
+      <a href="">Corporate Social Responsibility</a>
+      <a href="">Diversity, Inclusion & Belonging</a>
+      <a href="">Shoes That Fit</a>
+      <a href="">Big Brothers Big Sisters</a>
+      <a href="">Donate Clothes</a>
+    </div>
+    <div>
+      <h3>Nordstrom Card</h3>
+      <a href="">Apply for a Nordstrom Card</a>
+      <a href="">Pay My Bill</a>
+      <a href="">Manage my Nordstrom Card</a>
+    </div>
+    <div>
+      <h3>Nordstrom, Inc.</h3>
+      <a href="">Nordstrom</a>
+      <a href="">Nordstrom Canada </a>
+      <a href="">HauteLook</a>
+      <a href="">Investor Relations</a>
+      <a href="">Press Releases</a>
+      <a href="">Nordstrom Media Network</a>
+    </div>
+    <div>
+      <div class="laptop_logo_div">
+        <i class="fa-solid fa-laptop"></i>
+        <a href="https://www.nordstromrack.com/promo/NordstromRackApp"
+          >Download Our Apps</a
+        >
+      </div>
+
+      <div class="soccial_media_logo_div">
+        <a href="https://www.facebook.com/NordstromRack"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        &nbsp;
+        <a href="https://twitter.com/nordstromrack">
+          <i class="fa-brands fa-twitter"></i
+        ></a>
+        &nbsp;
+        <a href="https://in.pinterest.com/nordstromrack/"
+          ><i class="fa-brands fa-pinterest"></i
+        ></a>
+        &nbsp;
+        <a href="https://www.instagram.com/nordstromrack/">
+          <i class="fa-brands fa-square-instagram"></i
+        ></a>
+      </div>
+    </div>
+    <div>
+      <a href=""><i class="fa-solid fa-angle-up"></i></a>
+      <a href="">Top</a>
+    </div>
+  </div>
+  <div id="space"></div>
+  <div class="footers_last_div">
+    <div>
+      <a href="">Privacy</a>
+      <a href="">Do Not Sell My Personal Information</a>
+      <a href="">Terms & Conditions</a>
+      <a href="">Internet Based Ads</a>
+      <a href="">California Supply Chain Act</a>
+      <a href="">©2022 Nordstrom Rack</a>
+    </div>
+  </div>`
+}
+
+
+export { navbar, append, add,footer };

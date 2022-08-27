@@ -1,6 +1,8 @@
-import {navbar,append} from "../components/navbar.js"
+import {navbar,append , footer} from "../components/navbar.js"
 
 document.getElementById("navbarbody").innerHTML=navbar()
+
+document.getElementById("footerbar").innerHTML=footer()
 
 
 document.querySelector("body").style.backgroundColor = "whitesmoke"
