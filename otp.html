@@ -35,7 +35,11 @@
 
   <body>
     <div id="navbar">
-      <div><img src="./Image/nordstrom-rack-logo.png" alt="" /></div>
+      <div>
+        <a href="index.html"
+          ><img src="./Image/nordstrom-rack-logo.png" alt=""
+        /></a>
+      </div>
 
       <div>
         <a href="cart.html"
@@ -135,7 +139,7 @@
     uOtp += o1 + o2 + o3 + o4 + o5;
     if (uOtp === otp) {
       alert("OTP Verified Successfully");
-      window.location.href="order_confirmation.html"
+      window.location.href = "order_confirmation.html";
     } else {
       alert("Invalid OTP Entered");
     }

@@ -103,6 +103,18 @@ input[type="number"] {
   height: 50px;
   margin-left: 20px;
   margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  color: blue;
+}
+input[type="month"] {
+  width: 50%;
+  height: 50px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  color: blue;
 }
 input[type="text"] {
   width: 50%;
