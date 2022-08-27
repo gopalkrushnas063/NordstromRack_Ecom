@@ -3,8 +3,8 @@
 
 let append =(data,card) =>{
     data.forEach((el) => {
-        
-        let image=document.createElement("img")
+
+      let image=document.createElement("img")
         image.setAttribute("class","image")
         image.src=el.img;
 
@@ -48,14 +48,15 @@ let append =(data,card) =>{
     });
 }
 
-// let add=(el)=>{
+ let add=(el)=>{
 
-//    let addtocart=JSON.parse(localStorage.getItem("add"))||[];
-//     addtocart.push(el);
-//     localStorage.setItem("add",JSON.stringify(addtocart))
-//     console.log(el)
+    let addtocart=JSON.parse(localStorage.getItem("add"))||[];
+    addtocart.push(el);
+    localStorage.setItem("add",JSON.stringify(addtocart))
+    console.log(el)
     
-// }
+    
+}
 export {append}
 
 

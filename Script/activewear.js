@@ -242,12 +242,12 @@ activewear(activewearData)
 
 
 // ....................User Name Show in Home Page............................
-let userData = JSON.parse(localStorage.getItem("userData")) 
-// console.log(userName)
-let display = (userData) =>{
-  userData.forEach(el => {
-    console.log(el.name)
-    document.getElementById('uName').innerText = `Hi, ${el.name}`
-  });
-}
-display(userData)
+// let userData = JSON.parse(localStorage.getItem("userData")) 
+// // console.log(userName)
+// let display = (userData) =>{
+//   userData.forEach(el => {
+//     console.log(el.name)
+//     document.getElementById('uName').innerText = `Hi, ${el.name}`
+//   });
+// }
+// display(userData)

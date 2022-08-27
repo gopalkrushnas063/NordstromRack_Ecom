@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-/* /* thik hai nahe dono a tag ko gap do    thoda margin v sbko */
 #shopping {
   width: 70%;
   margin: auto;
@@ -14,7 +13,16 @@
 
 #btn_container {
   display: flex;
-  margin-bottom: 10px;
+  margin-top: 30px;
+  width: 500px;
+}
+#btn_container button {
+  width: 300px;
+  height: 40px;
+  font-size: 20px;
+}
+#btn1 {
+  color: grey;
 }
 
 #btn_container a {
@@ -36,4 +44,114 @@
 
 #gift img {
   width: 40px;
+}
+#bag_append img {
+  width: 90%;
+  height: 250px;
+}
+#bag_append {
+  width: 40%;
+  margin-top: 40px;
+
+  margin-bottom: 40px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+#quant {
+  width: 10%;
+  height: 40px;
+
+  font-size: 40px;
+  text-align: center;
+}
+#cart {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid grey;
+  margin: auto;
+}
+#price {
+  text-align: right;
+  padding-right: 2rem;
+  height: 30px;
+
+  margin-top: 45px;
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+#bottom {
+  width: 70%;
+
+  display: flex;
+  margin: auto;
+  margin-top: 40px;
+}
+#right {
+  width: 40%;
+  margin-top: 40px;
+  text-align: left;
+}
+#left {
+  width: 60%;
+}
+#img-container {
+  width: 60%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+#img-container img {
+  width: 60%;
+}
+#img-container div:nth-child(5) {
+  width: 100%;
+}
+#img-container div {
+  gap: -10px;
+
+  text-align: center;
+}
+.subtotal {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  width: 70%;
+  margin: auto;
+  font-size: 22px;
+}
+#checkout {
+  width: 400px;
+  margin: auto;
+  display: block;
+  margin-bottom: 30px;
+  height: 40px;
+  font-size: 25px;
+  background-color: #00819d;
+  color: white;
+}
+.subtotal p {
+  font-weight: bold;
+}
+#quantity {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+#quantity select {
+  width: 20%;
+  height: 50px;
+  font-size: 20px;
+  text-align: center;
+}
+#qty{
+  font-size: 30px;
+  margin-top: 35px;
+  font-weight: bold;
 }

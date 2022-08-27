@@ -235,7 +235,7 @@ bagacessories(bagacessoriesData)
 
 
 
-let userData = JSON.parse(localStorage.getItem("userData")) 
+let userData = JSON.parse(localStorage.getItem("userData")) || [] 
 // console.log(userName)
 let display = (userData) =>{
   userData.forEach(el => {
