@@ -140,10 +140,14 @@ function navbar() {
           </a>
       </div>
       <div>
+        <a href="beauty.html">
           <p>Beauty</p>
+        </a>
       </div>
       <div>
+        <a href="gifts.html">
           <p>Gifts</p>
+        </a>
       </div>
       <div>
           <p>Flash Events</p>
