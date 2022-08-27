@@ -15,7 +15,7 @@ function navbar() {
       <div>
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLS3SsGCqKLccokl5vCOakU4Lb5YItCxASZg&usqp=CAU"
               alt="logo">
-          <input type="search" placeholder="Search for products or brands">
+          <input type="search" id='search_box' placeholder="Search for products or brands">
       </div>
       <div>
           <div>
@@ -151,6 +151,7 @@ function navbar() {
 
 
 let append = (data, card, renderItem) => {
+    card.innerHTML = null
     data.forEach((el) => {
        let image = document.createElement("img");
         image.setAttribute("class", "image");
