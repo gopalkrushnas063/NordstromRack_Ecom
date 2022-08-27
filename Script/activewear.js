@@ -1,7 +1,7 @@
-import {navbar,append , footer} from "../components/navbar.js"
+import {navbar,append , footer,renderSuggestion} from "../components/navbar.js"
 
 document.getElementById("navbarbody").innerHTML=navbar()
-
+renderSuggestion()
 document.getElementById("footerbar").innerHTML=footer()
 
 

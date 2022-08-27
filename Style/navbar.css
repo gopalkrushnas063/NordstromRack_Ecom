@@ -228,3 +228,51 @@ a:hover {
 a:active {
   text-decoration: underline;
 }
+
+
+
+.input-container {
+  display: flex;
+  align-items: center;
+  width: 60vw;
+  position: relative;
+}
+
+.input-container img {
+  position: relative;
+  left: 30px;
+  width: 20px;
+  height: 18px;
+  z-index: 1;
+}
+
+.input-container input {
+  padding: 10px;
+  display: block;
+  width: 100%;
+  padding-left: 30px;
+  box-sizing: border-box;
+}
+
+.search_box {
+  position: relative;
+  left: 10px;
+}
+
+.hidden {
+  position: absolute;
+  top: 40px;
+  left: 18px;
+  width: 58.7vw;
+  padding: 10px;
+  box-sizing: border-box;
+  z-index: 10;
+  display: none;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.hidden>div {
+  color: black;
+  padding-top: 10px;
+}

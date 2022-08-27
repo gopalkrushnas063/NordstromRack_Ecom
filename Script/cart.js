@@ -1,6 +1,7 @@
-import { navbar, append, add } from "../components/navbar.js"
+import { navbar, append, add ,renderSuggestion} from "../components/navbar.js"
 
 document.getElementById("navbarbody").innerHTML = navbar()
+renderSuggestion()
 
 
 
