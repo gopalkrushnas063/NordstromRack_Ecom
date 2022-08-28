@@ -58,7 +58,8 @@ TeachStack used
   
   
   Product Page:
-  ![image](https://user-images.githubusercontent.com/103574856/186972854-f77064ba-cee4-4b0f-a42b-618d05f07659.png)
+  ![image](https://user-images.githubusercontent.com/103574856/187081464-9b303f9a-32df-449b-b01e-73794052cafd.png)
+
 
   Cart Section:
   ![image](https://user-images.githubusercontent.com/103574856/187081256-3bf99bc6-61e6-4489-91ac-1fb9452aec07.png)
