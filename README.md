@@ -61,4 +61,7 @@ TeachStack used
 
   Cart Section:
   ![image](https://user-images.githubusercontent.com/103574856/187081256-3bf99bc6-61e6-4489-91ac-1fb9452aec07.png)
+  
+  Payment section :
+  ![image](https://user-images.githubusercontent.com/103574856/187081315-2e863f72-b85f-4d79-85bf-0e91f0874cf7.png)
 
