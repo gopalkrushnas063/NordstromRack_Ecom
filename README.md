@@ -11,6 +11,7 @@ Features
 - Signup and Signin validation.
 - Local storage. 
 - Sorting based on price.
+- Search Functionality.
 - Add to cart;
 - User Name show after successfull login.
 - Payment , OTP , Order Confirmation Dynamic ;
