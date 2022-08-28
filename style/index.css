@@ -1,3 +1,8 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 #New_MarkDowns {
   /* border: 1px solid; */
   width: 95%;
@@ -7,6 +12,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  margin-top: 10px;
 }
 
 #first_child_of_NM {
@@ -55,13 +61,13 @@ span {
   position: relative;
 }
 
-.first_slide_bar img {
+#firstslidebar {
   width: 100%;
 }
 
-.first_slide_bar-buttons {
+.first_slide_bar_buttons {
   position: absolute;
-  top: 40%;
+  top: 35%;
   background-color: rgba(0, 0, 0, 0);
   border-style: none;
   color: rgb(221, 209, 209);
@@ -69,17 +75,15 @@ span {
   font-size: 50px;
   cursor: pointer;
 }
-
-.first_slide_bar-buttons:hover {
+.first_slide_bar_buttons:hover {
   background-color: rgb(84, 52, 52);
   color: rgb(35, 18, 18);
 }
-
-.left-button {
+#left_button {
   left: 20px;
 }
 
-.right-button {
+#right_button {
   right: 20px;
 }
 
@@ -137,8 +141,14 @@ span {
 #first_grid_box div {
   border: 1px solid transparent;
   width: 15%;
+  background-color: rgb(248,248,248);
 }
 
+/* .cloth_name {
+
+  color: red;
+  font-size:10px ;
+} */
 #first_grid_box img {
   width: 100%;
   height: 80%;
@@ -164,7 +174,11 @@ span {
   left: 20px;
 }
 
-#first_grid_box-right_button {
+.checked {
+  color: #2ba3c1;
+}
+
+#fourth_grid_box-right_button {
   right: 30px;
 }
 
@@ -178,16 +192,24 @@ span {
 
 .span1 span {
   color: #393939;
-  font-size: 13px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-family: 6 Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
+.span1 {
+  font-size: 11px;
+}
 
+.strike1 {
+  font-size: 90%;
+}
 .first_grid_box-divs-div {
   line-height: 2px;
   margin-top: -20px;
 }
-
+.first_grid_box-divs-div strike {
+  font-size: 13px;
+}
 #first_grid_box span {
   color: black;
 }
@@ -196,6 +218,7 @@ span {
   display: block;
   margin-top: 3px;
   padding-top: 6px;
+  font-size: 15px
 }
 
 #Here_Today_Gone_in_a_Flash {
@@ -212,67 +235,487 @@ span {
   justify-content: center;
 }
 
-.below_here_today{
-    border: 1px solid transparent;
-    width: 95%;
-    height: auto;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 10px;
+.below_here_today {
+  border: 1px solid transparent;
+  width: 95%;
+  height: auto;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
 }
-.below_here_today div{
-    border: 1px solid transparent;
-    height: auto;
+.below_here_today div {
+  border: 1px solid transparent;
+  height: auto;
+}
+
+.below_here_today img {
+  width: 100%;
+}
+
+.tt strong {
+  display: block;
+  font-weight: bold;
+  margin-top: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tt p {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.three_divs_slide {
+  position: relative;
+}
+
+.three_divs_slidebutton_class {
+  position: absolute;
+  top: 47%;
+  background-color: rgba(0, 0, 0, 0);
+  border-style: none;
+  color: rgb(221, 209, 209);
+  /* color: transparent; */
+  font-size: 50px;
+  cursor: pointer;
+}
+
+/* #left_button_id{
+   margin-left: 30px;
     
-}
-
-.below_here_today img{
-    width: 100%;
-}
-
-.tt strong{
-    display: block;
-    font-weight: bold;
-    margin-top: 5px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.tt p{
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.three_divs_slide {   
-    position: relative;
   }
-  
+  #right_button_id{
+   margin-right: 30px;
+  } */
 
- 
-  
-  .three_divs_slidebutton_class {
-    position: absolute;
-    top: 40%;
-    background-color: rgba(0, 0, 0, 0);
-    border-style: none;
-    color: rgb(221, 209, 209);
-    /* color: transparent; */
-    font-size: 50px;
-    cursor: pointer;
-  }
-  
-  .first_slide_bar-buttons:hover {
-    background-color: rgb(84, 52, 52);
-    color: rgb(35, 18, 18);
-  }
-  
-  #left_button_id {
+.first_slide_bar_buttons:hover {
+  background-color: rgb(84, 52, 52);
+  color: rgb(35, 18, 18);
+}
+
+/* #left_button_id {
     left: 20px;
   }
-  
-  #right_button_id {
+   */
+/* #right_button_id {
     right: 20px;
-  }
+  } */
+
+.fourth_slide_bar {
+  border: 1px solid;
+  margin: auto;
+  margin-top: 40px;
+  width: 95%;
+  height: auto;
+  border-color: transparent;
+  position: relative;
+}
+
+#fourthsidebar {
+  width: 100%;
+}
+
+.fourth_slidebar_buttons {
+  position: absolute;
+  top: 40%;
+  background-color: rgba(0, 0, 0, 0);
+  border-style: none;
+  color: rgb(221, 209, 209);
+  /* color: transparent; */
+  font-size: 50px;
+  cursor: pointer;
+}
+.fourth_slidebar_buttons:hover {
+  background-color: rgb(84, 52, 52);
+  color: rgb(35, 18, 18);
+}
+#left_button4 {
+  left: 20px;
+}
+
+#right_button4 {
+  right: 20px;
+}
+.buy_extra_div {
+  border: 1px solid transparent;
+  width: 95%;
+  margin: auto;
+  margin-top: -13px;
+}
+
+.buy_extra_div strong {
+  font-size: 29px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #393939;
+}
+
+.buy_extra_div strong p {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #393939;
+}
+
+#Active_style {
+  /* border: 1px solid; */
+  width: 95%;
+  height: 180px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#Active_style strong {
+  font-size: 29px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #393939;
+}
+
+#div_below_Active_style {
+  /* border: 1px solid green; */
+  width: 95%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#div_below_Active_style > div {
+  /* border: 1px solid; */
+  width: 55%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+#div_below_Active_style img {
+  width: 100%;
+}
+
+#div_below_Active_style strong {
+  font-size: 21px;
+  color: #393939;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#div_below_Active_style p {
+  font-size: 15px;
+  color: #393939;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#div_below_Active_style a {
+  font-size: 15px;
+  color: #2ba3c1;
+}
+
+#trending {
+  /* border: 1px solid; */
+  margin: auto;
+  width: 95%;
+  height: 60px;
+  margin-top: 45px;
+}
+
+#trending h2 {
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #393939;
+}
+
+.first_grid_box {
+  border: 2px solid transparent;
+  display: grid;
+  width: 95%;
+  height: auto;
+  grid-template-columns: repeat(6, 1fr);
+  margin: auto;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 5%;
+  position: relative;
+}
+
+.first_grid_box div {
+  border: 1px solid transparent;
+  width: 15%;
+  background-color: rgb(248,248,248);
+}
+
+.cloth_name {
+  font-size: 13px;
+}
+.first_grid_box img {
+  width: 100%;
+  height: 80%;
+}
+
+.first_grid_box button {
+  position: absolute;
+  top: 40%;
+  background-color: rgba(0, 0, 0, 0);
+  border-style: none;
+  color: rgb(221, 209, 209);
+  /* color: transparent; */
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.first_grid_box button:hover {
+  background-color: rgb(84, 52, 52);
+  color: rgb(35, 18, 18);
+}
+
+#first_grid_box-left_button {
+  left: 20px;
+}
+
+.checked {
+  color: #2ba3c1;
+}
+
+#first_grid_box-right_button {
+  right: 30px;
+}
+
+.first_grid_box div:nth-child(1) > a {
+  display: block;
+  margin-top: 10px;
+  color: #00819d;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+.iam_upto_discount {
+  font-size: 6%;
+}
+
+.fivth_slide_bar {
+  border: 3px solid  transparent;
+  margin: auto;
+
+  width: 95%;
+  height: auto;
+
+  position: relative;
+}
+
+#fifthsidebar {
+  width: 100%;
+}
+
+.fifth_slidebar_buttons {
+  position: absolute;
+  /* top: 900px; */
+  background-color: rgba(0, 0, 0, 0);
+  border-style: none;
+  color: rgb(112, 91, 91);
+  margin-top: 4%;
+  /* color: transparent; */
+  font-size: 50px;
+  cursor: pointer;
+}
+.fifth_slidebar_buttons:hover {
+  background-color: rgb(84, 52, 52);
+  color: rgb(35, 18, 18);
+}
+#left_button5 {
+  left: 20px;
+}
+
+#right_button5 {
+  right: 20px;
+}
+
+.Designer_Clothing_div {
+  border: 1px solid transparent;
+  width: 95%;
+  height: 100px;
+  margin: auto;
+  margin-top: 30px;
+  font-size: 19px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  color: #393939;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.All_the_must_haves_div {
+  border: 1px solid transparent;
+  width: 95%;
+  height: 150px;
+  margin: auto;
+  margin-top: 50px;
+  font-size: 29px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #393939;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Best_selling_items {
+  border: 1px solid transparent;
+  width: 95%;
+  height: 100px;
+  margin: auto;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #393939;
+  margin-top: 65px;
+}
+
+.More_to_know {
+  border: 1px solid transparent;
+  height: 150px;
+  width: 95%;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.empty2 {
+  border: 2px solid transparent;
+  width: 95%;
+  height: 100px;
+  margin: auto;
+}
+.empty3 {
+  border: 2px solid transparent;
+  width: 95%;
+  height: 60px;
+  margin: auto;
+}
+.rack_your_looks {
+  border: 1px solid transparent;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-size: 21px;
+  color: #393939;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.rack_your_looks2 > p {
+  border: 1px solid transparent;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-size: 15px;
+  color: #393939;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.seventh_slide {
+  border: 2px solid transparent;
+  display: grid;
+  width: 95%;
+  height: auto;
+  grid-template-columns: repeat(6, 1fr);
+  margin: auto;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 5%;
+  position: relative;
+}
+
+.seventh_slide div {
+  border: 1px solid transparent;
+  width: 15%;
+}
+
+.seventh_slide_img {
+  width: 100%;
+  height: 80%;
+}
+
+.seventh_slide button {
+  position: absolute;
+  top: 40%;
+  background-color: rgba(0, 0, 0, 0);
+  border-style: none;
+  color: rgb(221, 209, 209);
+  /* color: transparent; */
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.seventh_slide_buttons:hover {
+  background-color: rgb(84, 52, 52);
+  color: rgb(35, 18, 18);
+}
+
+#seventh_slide_left_button {
+  left: 20px;
+}
+
+#seventh_slide_right_button {
+  right: 20px;
+}
+
+.Recently_viewd {
+  border: 3px solid red transparent;
+  height: 70px;
+  width: 95%;
+  margin: auto;
+  font-size: 25px;
+  color: #393939;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: flex-end;
+}
+
+.grids_parent {
+  background-color: rgb(248, 248, 248);
+}
+
+#div_for_gap {
+  border: 2px solid transparent;
+  height: 120px;
+  width: 100%;
+  margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -324,9 +767,9 @@ span {
   #first_grid_box button {
     font-size: 25px;
   }
-  .first_slide_bar-buttons {
+  .first_slide_bar_buttons {
     position: absolute;
-    top: 40%;
+    top: 25%;
     background-color: rgba(0, 0, 0, 0);
     border-style: none;
     color: rgb(221, 209, 209);
@@ -334,6 +777,15 @@ span {
     font-size: 30px;
     cursor: pointer;
   }
+
+  #left_button {
+    left: 10px;
+  }
+
+  #right_button {
+    right: 10px;
+  }
+
   #first_grid_box div:nth-child(1) > a {
     display: block;
     margin-top: 10px;
@@ -343,60 +795,60 @@ span {
   }
   .span1 span {
     color: #393939;
-    font-size: 13px;
+    font-size: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-  }
-
-  .first_grid_box-divs-div {
-    line-height: 2px;
-    margin-top: -20px;
-  }
-
-  #first_grid_box span {
-    color: black;
-  }
-
-  .stars {
-    display: block;
-    margin-top: 3px;
-    padding-top: 6px;
-  }
-
-  .cloth_name {
-    font-size: 11px;
   }
 
   .span1 {
-    font-size: 8px;
+    font-size:8px;
   }
-  .span1 span {
-    color: #393939;
-    font-size: 9px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+  .first_grid_box-divs-div {
+    font-size: 60%;
   }
 
   .first_grid_box-divs-div {
     line-height: 2px;
-    margin-top: -16px;
+    margin-top: -10px;
   }
-
+  .first_grid_box-divs-div strike {
+    font-size: 9px;
+  }
   #first_grid_box span {
     color: black;
   }
 
-  #first_grid_box strike {
-    font-size: 8px;
+  .cloth_name {
+    font-size: 12px;
   }
 
   .stars {
     display: block;
     margin-top: 1px;
     padding-top: 4px;
+    font-size: 11px;
   }
-  
-#Here_Today_Gone_in_a_Flash {
+
+  .three_divs_slidebutton_class {
+    position: absolute;
+    top: 39%;
+    background-color: rgba(0, 0, 0, 0);
+    border-style: none;
+    color: rgb(221, 209, 209);
+    /* color: transparent; */
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  /* #left_button_id{
+   margin-left:0px;
+    
+  } */
+  /* #right_button_id{
+   margin-right: 0px;
+  } */
+
+  #Here_Today_Gone_in_a_Flash {
     width: 95%;
     height: 93px;
     border: 1px solid transparent;
@@ -408,6 +860,41 @@ span {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .fourth_slide_bar {
+    border: 1px solid;
+    margin: auto;
+    margin-top: 40px;
+    width: 95%;
+    height: auto;
+    border-color: transparent;
+    position: relative;
+  }
+
+  #fourthsidebar {
+    width: 100%;
+  }
+
+  .fourth_slidebar_buttons {
+    position: absolute;
+    top: 22%;
+    background-color: rgba(0, 0, 0, 0);
+    border-style: none;
+    color: rgb(221, 209, 209);
+    /* color: transparent; */
+    font-size: 30px;
+    cursor: pointer;
+  }
+  .fourth_slidebar_buttons:hover {
+    background-color: rgb(84, 52, 52);
+    color: rgb(35, 18, 18);
+  }
+  #left_button4 {
+    left: 10px;
+  }
+
+  #right_button4 {
+    right: 10px;
   }
 }
 
@@ -424,11 +911,29 @@ span {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
   }
-
-  .first_slide_bar button {
-    font-size: 25px;
+  .stars {
+    font-size: 8px;
   }
 
+  .first_slide_bar_buttons {
+    position: absolute;
+    top: 25%;
+    background-color: rgba(0, 0, 0, 0);
+    border-style: none;
+    color: rgb(221, 209, 209);
+    /* color: transparent; */
+    font-size: 30px;
+    cursor: pointer;
+  }
+  #left_button {
+    left: 6px;
+  }
+  .first_grid_box-divs-div strike {
+    font-size: 6px;
+  }
+  #right_button {
+    right: 6px;
+  }
   #below_first_slide_bar {
     /* border: 2px solid; */
     margin-top: 10px;
@@ -451,13 +956,13 @@ span {
     font-size: 8px;
     font-family: Arial, Helvetica, sans-serif;
   }
-.span1{
-    font-size: 8px;
-}
+  .span1 {
+    font-size:7px;
+  }
 
-.span1 span {
+  .span1 span {
     color: #393939;
-    font-size: 9px;
+    font-size: 6px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
   }
@@ -491,9 +996,8 @@ span {
     font-size: 4px;
   }
 
-
-  .cloth_name{
-    font-size: 9px;
+  .cloth_name {
+    font-size: 10px;
   }
 
   .first_grid_box-divs-div {
@@ -501,15 +1005,26 @@ span {
     margin-top: -10px;
   }
 
-  .span1 span {
-    color: #393939;
-    font-size: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+  .three_divs_slidebutton_class {
+    position: absolute;
+    top: 40%;
+    background-color: rgba(0, 0, 0, 0);
+    border-style: none;
+    color: rgb(221, 209, 209);
+    /* color: transparent; */
+    font-size: 20px;
+    cursor: pointer;
   }
 
-  #first_grid_box strike{
-    font-size: 10px;
+  /* #left_button_id{
+   margin-left:0px;
+    
+  } */
+  /* #right_button_id{
+   margin-right: 0px;
+  } */
+  #first_grid_box strike {
+    font-size: 50%;
   }
   #Here_Today_Gone_in_a_Flash {
     width: 95%;
@@ -523,5 +1038,26 @@ span {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .fourth_slidebar_buttons {
+    position: absolute;
+    top: 22%;
+    background-color: rgba(0, 0, 0, 0);
+    border-style: none;
+    color: rgb(221, 209, 209);
+    /* color: transparent; */
+    font-size: 30px;
+    cursor: pointer;
+  }
+  .fourth_slidebar_buttons:hover {
+    background-color: rgb(84, 52, 52);
+    color: rgb(35, 18, 18);
+  }
+  #left_button4 {
+    left: 10px;
+  }
+
+  #right_button4 {
+    right: 10px;
   }
 }
