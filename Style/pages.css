@@ -23,8 +23,8 @@ body{
     display: block;  
     line-height: 22.4px;  
     margin-left: 5%;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    text-align: center;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    /* text-align: center; */
     border-radius: 10px;
 }
 .image{ 
@@ -49,11 +49,11 @@ h5{
     width: 100%;
    
 
-    text-align: center;
+    /* text-align: center; */
 }
 .span1{
     font-weight: 700;
-    margin-left: 50%;
+    /* margin-left: 50%; */
 
 }
 

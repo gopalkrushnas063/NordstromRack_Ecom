@@ -1,5 +1,5 @@
 function navbar() {
-    return `<div id="title">
+  return `<div id="title">
       <div>
           <p>Take 40% off sandals! In stores & online thru Sept. 5. Selected styles only. Exclusions apply.<a href="#"><span style="text-decoration: underline">Shop now.</span></a></p>
       </div>
@@ -12,11 +12,24 @@ function navbar() {
       <a href="index.html"> <img src="/Image/nordstrom-rack-logo.png" alt="logo"></a>
      
       </div>
-      <div>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLS3SsGCqKLccokl5vCOakU4Lb5YItCxASZg&usqp=CAU"
-              alt="logo">
-          <input type="search" placeholder="Search for products or brands">
+      <div class="input-container">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLS3SsGCqKLccokl5vCOakU4Lb5YItCxASZg&usqp=CAU"
+        alt="">
+      <input type="text" id="search_box" placeholder="Search for products and brands">
+  
+      <div class="hidden ">
+      <div><a href="mens.html">Mens</a></div>
+      <div><a href="women.html">Womens</a></div>
+      <div><a href="home.html">Home</a></div>
+      <div><a href="activewear.html">Activewear</a></div>
+      <div><a href="bag&acessories.html">Bag&acessories</a></div>
+      <div><a href="beauty.html">Beauty</a></div>
+      <div><a href="shoes.html">Shoes</a></div>
+      <div><a href="kids.html">Kids</a></div>
+      <div><a href="gifts.html">Gifts</a></div>
+      
       </div>
+    </div>
       <div>
           <div>
               <div id="signpl">
@@ -156,90 +169,101 @@ function navbar() {
   </div>`;
 }
 
+function renderSuggestion() {
+  let search_box = document.getElementById('search_box')
+  let suggestion_box = document.querySelector('.hidden')
+  search_box.addEventListener('keydown', () => {
+    if (search_box.value.length > 0) {
+      suggestion_box.style.display = 'block'
+    } else {
+      suggestion_box.style.display = 'none'
+    }
+  })
+}
 
 let append = (data, card, renderItem) => {
-    data.forEach((el) => {
-       let image = document.createElement("img");
-        image.setAttribute("class", "image");
-        image.src = el.img;
+  data.forEach((el) => {
+    let image = document.createElement("img");
+    image.setAttribute("class", "image");
+    image.src = el.img;
 
-        // let p = document.createElement('p')
+    // let p = document.createElement('p')
 
 
-        let brand = document.createElement("h5");
-        brand.innerText = el.brandName;
+    let brand = document.createElement("h5");
+    brand.innerText = el.brandName;
 
-        let sub = document.createElement("p");
-        sub.setAttribute("class", "type");
-        sub.innerText = el.type;
+    let sub = document.createElement("p");
+    sub.setAttribute("class", "type");
+    sub.innerText = el.type;
 
-        let div1 = document.createElement("div");
-        div1.setAttribute("class", "prc");
-        div1.style.display = "flex";
+    let div1 = document.createElement("div");
+    div1.setAttribute("class", "prc");
+    div1.style.display = "flex";
 
-        let span1 = document.createElement("span");
-        span1.setAttribute("class", "span1");
-        span1.innerText = el.price;
+    let span1 = document.createElement("span");
+    span1.setAttribute("class", "span1");
+    span1.innerText = el.price;
 
-        let span2 = document.createElement("span");
-        span2.setAttribute("class", "span2");
-        span2.innerText = el.off;
+    let span2 = document.createElement("span");
+    span2.setAttribute("class", "span2");
+    span2.innerText = el.off;
 
-        div1.append(span1, span2);
+    div1.append(span1, span2);
 
-        let cst = document.createElement("p");
-        cst.setAttribute("class", "cst");
-        cst.innerText = el.cost;
+    let cst = document.createElement("p");
+    cst.setAttribute("class", "cst");
+    cst.innerText = el.cost;
 
-        let shp = document.createElement("p");
-        shp.setAttribute("class", "shp");
-        shp.innerText = el.ship;
+    let shp = document.createElement("p");
+    shp.setAttribute("class", "shp");
+    shp.innerText = el.ship;
 
-        let div = document.createElement("div");
+    let div = document.createElement("div");
 
-        div.onclick = () => {
-            // renderItem()
+    div.onclick = () => {
+      // renderItem()
 
-            if(renderItem) renderItem()
-            add(el);
-        };
+      if (renderItem) renderItem()
+      add(el);
+    };
 
-        div.append(image, brand, sub, div1, cst, shp);
+    div.append(image, brand, sub, div1, cst, shp);
 
-       
-        let quantity=document.createElement("div")
-        quantity.setAttribute("id","quant")
-        let p = document.createElement('p')
 
-        p.innerHTML = el.count || 0;
-        quantity.append(p)
-        card.append(div);
-        
-    });
+    let quantity = document.createElement("div")
+    quantity.setAttribute("id", "quant")
+    let p = document.createElement('p')
+
+    p.innerHTML = el.count || 0;
+    quantity.append(p)
+    card.append(div);
+
+  });
 };
 
 let add = (el) => {
-    let addtocart = JSON.parse(localStorage.getItem("add")) || [];
-    //console.log(el, addtocart[0]);
-    let index = addtocart.findIndex(ele => ele.brandName === el.brandName)
-    if (index !== -1) {
-        addtocart[index].count = addtocart[index].count + 1
-    } else {
-        el.count = 1
-        addtocart.push(el)
-    }
+  let addtocart = JSON.parse(localStorage.getItem("add")) || [];
+  //console.log(el, addtocart[0]);
+  let index = addtocart.findIndex(ele => ele.brandName === el.brandName)
+  if (index !== -1) {
+    addtocart[index].count = addtocart[index].count + 1
+  } else {
+    el.count = 1
+    addtocart.push(el)
+  }
 
 
-    console.log(addtocart)
+  console.log(addtocart)
 
-    localStorage.setItem("add", JSON.stringify(addtocart))
-    alert("Product Added to Your Cart Successfully")
-    window.location.href = "cart.html"
+  localStorage.setItem("add", JSON.stringify(addtocart))
+  alert("Product Added to Your Cart Successfully")
+  window.location.href = "cart.html"
 
 }
 
-function footer(){
-    return `<div class="Get_Exclusive_offers">
+function footer() {
+  return `<div class="Get_Exclusive_offers">
     <img
       src="https://n.nordstrommedia.com/id/e63e8dd7-3537-47db-912c-7d370e63658f.jpeg?h=180&w=1600"
       alt=""
@@ -349,4 +373,4 @@ function footer(){
 }
 
 
-export { navbar, append, add,footer };
+export { navbar, append, add, footer, renderSuggestion };

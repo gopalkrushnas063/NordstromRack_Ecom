@@ -1,5 +1,5 @@
 body {
-  background-color: #f4f4f4;
+  /* background-color: #f4f4f4; */
 }
 #paymentBox {
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
@@ -141,4 +141,9 @@ button {
   cursor: pointer;
   margin-left: 20px;
   font-size: 20px;
+}
+
+#search_box {
+  
+  margin-top: 20px;
 }
